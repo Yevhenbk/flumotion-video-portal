@@ -1,0 +1,97 @@
+[{
+    "id": "63d4ec71-5df7-4a0e-9216-2510d47649e5",
+    "title": "Plane sample",
+    "description": "Despegue ligero",
+    "duration": 1759,
+    "tags": "Vuelo, Aviones, Piloto",
+    "filedata": {
+        "bitrate": 1500,
+        "fileSize": 361993216,
+        "filename": "63d4ec71-5df7-4a0e-9216-2510d47649e5_Fast_H1500.mp4"
+    },
+    "thumbnail": {
+        "id": "45e237c6-41be-40ec-9e20-0ae3c0bc2b52",
+        "name": "thumbnail-media-63d4ec71-5df7-4a0e-9216-2510d47649e5",
+        "filename": "63d4ec71-5df7-4a0e-9216-2510d47649e5_3.jpg"
+    }
+},{
+    "id": "00aea426-f0db-440d-b79b-8e3d97b81eb1",
+    "title": "Clip",
+    "description": "",
+    "duration": 8,
+    "tags": "Playa",
+    "filedata": {
+        "bitrate": 2500,
+        "fileSize": 2729984,
+        "filename": "00aea426-f0db-440d-b79b-8e3d97b81eb1_Fast_H2500.mp4"
+    },
+    "thumbnail": {
+        "id": "4868075b-9835-4035-b956-a356765da9dd",
+        "name": "Relaxing beach",
+        "filename": "00aea426-f0db-440d-b79b-8e3d97b81eb1_3.jpg"
+    }
+},{
+    "id": "196924be-ba33-400f-b26b-4a9a0a4e1069",
+    "title": "Sample 360",
+    "description": "360 video sample",
+    "duration": 57,
+    "tags": "360, VR",
+    "filedata": {
+        "bitrate": 14000,
+        "fileSize": 95792128,
+        "filename": "196924be-ba33-400f-b26b-4a9a0a4e1069_Quality_H14000.mp4"
+    },
+    "thumbnail": {
+        "id": "f12a6802-adbd-4565-8386-3eeac299e70f",
+        "name": "thumbnail-media-196924be-ba33-400f-b26b-4a9a0a4e1069",
+        "filename": "196924be-ba33-400f-b26b-4a9a0a4e1069_3.jpg"
+    }
+},{
+    "id": "ef286498-99f0-4b43-9a3a-c7fb764b9938",
+    "title": "Penny",
+    "description": "Test penny gem",
+    "duration": 64,
+    "tags": "Sample, Penny gem",
+    "filedata": {
+        "bitrate": 1500,
+        "fileSize": 12346368,
+        "filename": "ef286498-99f0-4b43-9a3a-c7fb764b9938_Fast_H1500.mp4"
+    },
+    "thumbnail": {
+        "id": "45f3abab-89fa-4ef4-a213-6d9a8c0c115d",
+        "name": "Penny gem",
+        "filename": "ef286498-99f0-4b43-9a3a-c7fb764b9938_3.jpg"
+    }
+},{
+    "id": "c75a1507-fb3d-4b54-bb66-998851225a65",
+    "title": "Sky",
+    "description": "19092023",
+    "duration": 20,
+    "tags": "Sky, Clouds",
+    "filedata": {
+        "bitrate": 2500,
+        "fileSize": 6661120,
+        "filename": "c75a1507-fb3d-4b54-bb66-998851225a65_Fast_H2500.mp4"
+    },
+    "thumbnail": {
+        "id": "d8091407-f607-40a4-a76f-b6ef43b7022a",
+        "name": "cloudy",
+        "filename": "c75a1507-fb3d-4b54-bb66-998851225a65_3.jpg"
+    }
+},{
+    "id": "c7436ec0-b1d5-440a-a918-180db83156c6",
+    "title": "Red",
+    "description": "justice?",
+    "duration": 28,
+    "tags": "Futbol",
+    "filedata": {
+        "bitrate": 2500,
+        "fileSize": 9646080,
+        "filename": "c7436ec0-b1d5-440a-a918-180db83156c6_Fast_H2500.mp4"
+    },
+    "thumbnail": {
+        "id": "db23d9c1-b2b5-48f4-9893-3e7c60419ce9",
+        "name": "death",
+        "filename": "c7436ec0-b1d5-440a-a918-180db83156c6_3.jpg"
+    }
+}]
