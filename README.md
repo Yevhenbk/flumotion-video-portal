@@ -8,7 +8,7 @@ Flumotion Video Portal is a comprehensive video platform that combines a powerfu
 
 ## 📸 Application Preview
 
-![Flumotion Video Portal](./frontend/public/app-preview.png)
+![Flumotion Video Portal]([./frontend/public/app-preview.png](https://github.com/Yevhenbk/flumotion-video-portal/blob/main/frontend/public/FlumotionVideoPortalPreview.png))
 
 *Modern, responsive video streaming interface with atomic design components*
 
