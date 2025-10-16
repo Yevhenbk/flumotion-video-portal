@@ -6,6 +6,18 @@ A modern, full-stack video streaming and management platform built with Next.js 
 
 Flumotion Video Portal is a comprehensive video platform that combines a powerful Node.js backend with a modern Next.js frontend to deliver seamless video streaming experiences. The platform is designed for corporate environments requiring professional video management and playback capabilities.
 
+## 📸 Application Preview
+
+![Flumotion Video Portal](./frontend/public/app-preview.png)
+
+*Modern, responsive video streaming interface with atomic design components*
+
+The application features a clean, professional interface with:
+- **Left Panel**: Advanced video player with Flumotion CDN integration
+- **Right Panel**: 2-column media gallery with thumbnail previews
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Professional Styling**: Corporate-grade UI with consistent branding
+
 ## ✨ Key Features
 
 ### 🎥 Video Management
@@ -25,6 +37,12 @@ Flumotion Video Portal is a comprehensive video platform that combines a powerfu
 - **TypeScript Throughout** - Full type safety across frontend and backend
 - **Hot Reload Development** - Instant feedback during development
 - **Modern Build Tools** - Next.js 15 with Turbopack, Node.js with nodemon
+
+### 🎯 Visual Experience
+- **Professional Interface** - Clean, corporate-grade design (see preview above)
+- **Atomic Design System** - Consistent, scalable component architecture
+- **Responsive Layout** - Perfect adaptation across all screen sizes
+- **Interactive Components** - Smooth animations and user feedback
 
 ## 🏗️ Architecture
 
@@ -97,6 +115,8 @@ Frontend will be available at: `http://localhost:3000` (or next available port)
 
 #### 3. Access the Application
 Open your browser and navigate to the frontend URL. The application will automatically connect to the backend API.
+
+🎉 **You should see the interface shown in the preview above** - a professional video portal with the player on the left and media gallery on the right!
 
 ## 🛠️ Tech Stack
 
