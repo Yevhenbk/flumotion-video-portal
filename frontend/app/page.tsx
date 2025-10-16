@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getAllMedias, checkBackendHealth } from '@/lib/api';
-import VideoPortal from '@/components/VideoPortal';
+import VideoPortalAtomic from '@/components/organisms/VideoPortalAtomic';
 import BackendHealthWarning from '@/components/BackendHealthWarning';
 
 export const metadata: Metadata = {
@@ -10,7 +10,15 @@ export const metadata: Metadata = {
 
 /**
  * Home page - Server Component
- * Fetches data on the server and passes to client components
+ * 
+ * Refactored to use atomic design principles while maintaining
+ * EXACTLY the same visual appearance and functionality as before.
+ * 
+ * Atomic Design Structure:
+ * - Atoms: LoadingSpinner, VideoFrame, TagPill, etc.
+ * - Molecules: VideoPlayerContainer, VideoInfoCard, MediaCardAtomic
+ * - Organisms: VideoPlayerAtomic, MediaGalleryAtomic, HeaderAtomic, FooterAtomic
+ * - Page Template: VideoPortalAtomic (maintains original layout)
  */
 export default async function HomePage() {
   // Fetch data in parallel on the server
@@ -24,8 +32,8 @@ export default async function HomePage() {
       {/* Backend Health Warning */}
       {!isBackendHealthy && <BackendHealthWarning />}
       
-      {/* Main Application */}
-      <VideoPortal initialMedias={medias} />
+      {/* Main Application - Now uses atomic design (same appearance) */}
+      <VideoPortalAtomic initialMedias={medias} />
     </main>
   );
 }
