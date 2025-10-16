@@ -1,0 +1,245 @@
+/* Media Card Container */
+.media-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid transparent;
+  height: 100%;
+}
+
+.media-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.media-card:active {
+  transform: translateY(-4px);
+}
+
+.media-card.selected {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #667eea;
+}
+
+.media-card.selected:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #667eea, 0 12px 24px rgba(102, 126, 234, 0.2);
+}
+
+/* Thumbnail Container */
+.card-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover .thumbnail-image {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.media-card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Duration Badge */
+.duration-badge {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.75rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Selected Indicator */
+.selected-indicator {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(102, 126, 234, 0.3);
+  animation: pulse-border 1.5s ease-in-out infinite;
+}
+
+.indicator-icon {
+  font-size: 3rem;
+  color: #667eea;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  animation: bounce-icon 1s ease-in-out infinite;
+}
+
+@keyframes bounce-icon {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-border {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+/* Card Content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1a1a2e;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Card Metadata */
+.card-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.meta-item .icon {
+  font-size: 0.85rem;
+}
+
+/* Card Tags */
+.card-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.tag-preview {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #666;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.media-card:hover .tag-preview {
+  background: #667eea;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .media-card {
+    border-radius: 8px;
+  }
+
+  .card-content {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 1;
+  }
+
+  .card-meta {
+    gap: 0.5rem;
+  }
+
+  .meta-item {
+    font-size: 0.7rem;
+  }
+
+  .duration-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .media-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card-thumbnail {
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-content {
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 0.8rem;
+  }
+
+  .meta-item {
+    font-size: 0.65rem;
+  }
+
+  .indicator-icon {
+    font-size: 2rem;
+  }
+}
